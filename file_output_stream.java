@@ -2,35 +2,32 @@ package java_IO_Stream;
 import java.io.*;
 public class file_output_stream {
 
-	public static void main(String[] args) throws Exception
+	public static void main(String[] args) throws IOException
 	{
 		// TODO Auto-generated method stub
-		 try(FileOutputStream fos=new FileOutputStream("C:/MyJava/Test.txt");)
+		 try(FileOutputStream fos=new FileOutputStream("C:\\Users\\KESHAV MISHRA\\MyJava\\Test.txt");)
 	        {
 	        
-	        String str="earn Java Programming.";
+	        String str="Hello this is keshav mishra and i'am mastering java.";
 	        
-	        byte b[]=str.getBytes();
 	        
-	        /*
-	        //fos.write(str.getBytes());
-	        for(byte x:b)
-	            fos.write(x);*/
-	        //fos.write(b, 6, str.length()-6);
 	        
-	        fos.write(b);
-	        
-	        //fos.close();
+	        fos.write(str.getBytes());
+	        fos.close();
 	        
 	        }
-	        /*catch(FileNotFoundException e)
+	        
+	        
+	        
+	     catch(FileNotFoundException e)
 	        {
 	            System.out.println(e);
 	        }
+	         
 	        catch(IOException e)
 	        {
 	            System.out.println(e);
-	        }*/
+	        }
 	}
 
 }
