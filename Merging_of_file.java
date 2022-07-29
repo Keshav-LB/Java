@@ -20,11 +20,17 @@ public class Merging_of_file {
 			fo.write(x);
 		}
 		
-		System.out.println(sis.available());
+		/*System.out.println(sis.available());
 		byte b[] = new byte[sis.available()];
 		sis.read(b);
 		String s = new String(b);
-		System.out.println(s);
+		System.out.println(s);*/
+		int y;
+		while((y=sis.read())!=-1)
+		{
+			System.out.print((char)y);
+		}
+		
 		
 		
 		
